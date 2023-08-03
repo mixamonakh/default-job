@@ -1,0 +1,36 @@
+// ! базовые
+@import 'base/global';
+@import 'base/color';
+@import 'base/font-family';
+@import 'base/font-size';
+@import 'base/margin';
+
+// ! страницы
+@import 'page/home';
+@import 'page/error';
+
+// ! миксины
+@import 'mixins/nth-last-child-margin';
+@import 'mixins/icon-before';
+
+// ! компоненты
+@import 'components/breadcrumb';
+@import 'components/buttons';
+@import 'components/dropdown';
+@import 'components/form';
+@import 'components/image';
+@import 'components/link';
+@import 'components/slider-swiper';
+@import 'components/menu';
+@import 'components/slider-slick-template';
+@import 'components/slider';
+@import 'components/table';
+
+// ! модули
+@import 'module/header';
+@import 'module/footer';
+@import 'module/banners';
+@import 'module/first-screen';
+
+// ! спрайты
+@import 'sprite-template';

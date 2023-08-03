@@ -1,0 +1,29 @@
+.img {
+    width: 100%;
+}
+.img-cover{
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1399px) {
+
+}
+// !xl
+@media (max-width: 1199px) {
+
+}
+// !lg
+@media (max-width: 990px) {
+
+}
+// !md
+@media (max-width: 767px) {
+    .img-mob {
+        width: 150px;
+    }
+}
+// !sm
+@media (max-width: 575px) {
+
+}

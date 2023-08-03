@@ -1,0 +1,21 @@
+:root {
+    --button-bg: #1976D2;
+    --button-color: var(--white);
+    --border-radius-button: 33px;
+    --button-font-size: 20px;
+    --button-font-weight: 600;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 173px;
+    height: 53px;
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    font-size: var(--button-font-size);
+    line-height: var(--button-font-size);
+    font-weight: var(--button-font-weight);
+    border-radius: var(--border-radius-button);
+}

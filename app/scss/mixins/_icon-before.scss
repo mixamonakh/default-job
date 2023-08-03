@@ -1,0 +1,13 @@
+@mixin icon-before( $name, $direction, $width, $height, $margin-direction, $margin-value ){
+    display: flex;
+    align-items: center;
+    &:#{$direction}{
+        content: '';
+        display: block;
+        background: url(../icons/psevdo/#{$name})no-repeat 0%/contain;
+        width: $width;
+        height: $height;
+        margin-#{$margin-direction}: $margin-value;
+        @content
+    }
+}
