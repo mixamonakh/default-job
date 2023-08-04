@@ -1,13 +1,48 @@
 :root {
     --transition-def: .4s all;
-    --body-font-size: 18px;
-    --section-margin-bot: 130px;
+
+
+    // ! для тега body
+    --body-font-size: 14px;
+    --body-line-height: 18px;
+    --body-color-text: var(--white);
+
+    // ! основной шрифт *
+    --default-font-family: 'AtypDisplay', sans-serif;
+
+    // ! дефолтная кнопка
+    --button-bg: #1976D2;
+    --button-color: var(--white);
+    --border-radius-button: 33px;
+    --button-font-size: 20px;
+    --button-font-weight: 600;
+    --button-width: 20px;
+    --button-height: 20px;
+
+    // ! font-size HTML для отступов
+    --html-font-size: 20px;
+
+    // ! отступ между секциями
+    --section-margin-bot: 30px;
 }
+
+
+@media (max-width: 767px) {
+    :root {
+        // ! для тега body
+        --body-font-size: 14px;
+        --body-line-height: 18px;
+    
+        // ! font-size HTML для отступов
+        --html-font-size: 20px;
+    
+        // ! отступ между секциями
+        --section-margin-bot: 30px;
+    }
+}
+
 * {
-    font-family: 'Roboto', sans-serif;
-}
-.opensans {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--default-font-family);
 }
 html {
     border: none !important;
@@ -16,8 +51,8 @@ body {
     font-family: '';
     font-size: var(--body-font-size);
     font-weight: 400;
-    line-height: 130%;
-    color: #000;
+    line-height: var(--body-line-height);
+    color: var(--body-color-text);
 }
 main {
     overflow: hidden;
@@ -31,18 +66,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
-
-.white {
-    color: var(--white);
-}
-.mb130 {
+.sectiion-mb {
     margin-bottom: var(--section-margin-bot);
 }
 // !! запретить перенос
 .white-space {
     white-space: nowrap;
 }
-
 .italic {
     font-style: italic;
 }
@@ -56,26 +86,21 @@ h1, h2, h3, h4, h5, h6 {
 
 // !xxl
 @media (max-width: 1399px) {
-    .white-space {
-        white-space: wrap;
-    }
+
 }
 // !xl
 @media (max-width: 1199px) {
 }
 // !lg
 @media (max-width: 990px) {
-    :root {
-        --body-font-size: 15px;
-        --section-margin-bot: 100px;
-    }
+
 }
 // !md
 @media (max-width: 767px) {
-    .container {
-        padding-left: 12px !important;
-        padding-right: 12px !important;
-    }
+    // .container {
+    //     padding-left: 12px !important;
+    //     padding-right: 12px !important;
+    // }
 }
 // !sm
 @media (max-width: 575px) {

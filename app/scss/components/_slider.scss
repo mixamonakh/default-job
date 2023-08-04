@@ -2,13 +2,9 @@
     // ! модификации
 
     // ! инициалзиция только в мобилке
-    &_init-mobile {
-        display: flex;
-        gap: 30px;
-        .item {
-            width: 33.3%;
-        }
-    }
+    // &_init-mobile {
+        
+    // }
 }
 // !xxl
 @media (max-width: 1399px) {
@@ -28,13 +24,9 @@
         // ! модификации
     
         // ! инициалзиция только в мобилке
-        &_init-mobile {
-            display: inherit;
-            gap: inherit;
-            .item {
-                width: inherit;
-            }
-        }
+        // &_init-mobile {
+            
+        // }
     }
 }
 // !sm

@@ -49,33 +49,33 @@
 
 // ! переопределяем стандартные стили дотстов slick слайдера
 
-.slick-dots {
-    margin-bottom: 0;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex !important;
-    gap: var(--slick-dots-gap);
-    position: absolute;
-    bottom: var(--slick-dots-bottom-position);
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .slick-dots li {
-    width: var(--slick-dots-width);
-    height: var(--slick-dots-height);
-    display: block;
-    background-color: var(--slick-dots-bg-color);
-    transition: 0.2s all;
-    border-radius: var(--slick-dots-radius);
-  }
-  .slick-dots li.slick-active {
-    background-color: var(--slick-dots-active-bg-color);
-  }
-  .slick-dots button {
-    font-size: 0;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
-  }
+// .slick-dots {
+//     margin-bottom: 0;
+//     list-style-type: none;
+//     padding: 0;
+//     margin: 0;
+//     display: flex !important;
+//     gap: var(--slick-dots-gap);
+//     position: absolute;
+//     bottom: var(--slick-dots-bottom-position);
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+//   .slick-dots li {
+//     width: var(--slick-dots-width);
+//     height: var(--slick-dots-height);
+//     display: block;
+//     background-color: var(--slick-dots-bg-color);
+//     transition: 0.2s all;
+//     border-radius: var(--slick-dots-radius);
+//   }
+//   .slick-dots li.slick-active {
+//     background-color: var(--slick-dots-active-bg-color);
+//   }
+//   .slick-dots button {
+//     font-size: 0;
+//     background: none;
+//     border: none;
+//     outline: none;
+//     padding: 0;
+//   }

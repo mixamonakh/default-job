@@ -14,23 +14,21 @@
 @import 'mixins/icon-before';
 
 // ! компоненты
-@import 'components/breadcrumb';
 @import 'components/buttons';
 @import 'components/dropdown';
-@import 'components/form';
 @import 'components/image';
 @import 'components/link';
-@import 'components/slider-swiper';
 @import 'components/menu';
 @import 'components/slider-slick-template';
 @import 'components/slider';
-@import 'components/table';
+@import 'components/accordion';
 
 // ! модули
 @import 'module/header';
 @import 'module/footer';
-@import 'module/banners';
+// @import 'module/banner';
 @import 'module/first-screen';
+@import 'module/404';
 
 // ! спрайты
 @import 'sprite-template';

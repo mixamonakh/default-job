@@ -39,7 +39,8 @@ gulp.task('scripts', function(){
 gulp.task('libs', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
-        'app/libs/vanilla-lazyload/dist/lazyload.min.js'
+        'app/libs/vanilla-lazyload/dist/lazyload.min.js',
+        'app/libs/slick-carousel/slick/slick.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -134,10 +135,10 @@ gulp.task('prebuild', async function(){
     ])
     .pipe(gulp.dest('dist/image'));
 
-    const buildSprite = gulp.src([
-        'app/icons/sprite.svg'
-    ])
-    .pipe(gulp.dest('dist/icons'));
+    // const buildSprite = gulp.src([
+    //     'app/icons/sprite.svg'
+    // ])
+    // .pipe(gulp.dest('dist/icons'));
 });
 
 // чистим кэш
