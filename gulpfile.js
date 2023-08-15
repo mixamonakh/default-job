@@ -40,7 +40,7 @@ gulp.task('libs', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/vanilla-lazyload/dist/lazyload.min.js',
-        'app/libs/slick-carousel/slick/slick.min.js'
+        'app/libs/swiper/swiper.min.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -82,11 +82,11 @@ gulp.task('clean', function(){
 
 // ! чистим неиспользуемый css
 gulp.task('uncss', function () {
-    return gulp.src('app/css/libs.min.css') // ! Из этого файла стилей
+    return gulp.src('app/css/kit-style.min.css') // ! Из этого файла стилей
         .pipe(uncss({
             html: ["app/*.html"]
         }))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('app/css'));
 });
 
 // сжатие картиночек
@@ -105,8 +105,7 @@ gulp.task('img', function(){
 // переносим файлы в buld
 gulp.task('prebuild', async function(){
     const buildCss = gulp.src([
-        'app/css/style.min.css',
-        'app/css/responsive.min.css'
+        'app/css/*.min.css'
     ])
     .pipe(gulp.dest('dist/css'))
 
@@ -126,12 +125,12 @@ gulp.task('prebuild', async function(){
     .pipe(gulp.dest('dist'));
 
     const buildIcons = gulp.src([
-        'app/icons/*'
+        'app/icons/**/*'
     ])
     .pipe(gulp.dest('dist/icons'));
 
     const buildImage = gulp.src([
-        'app/image/**/*.webp'
+        'app/image/**/*.{webp,svg}'
     ])
     .pipe(gulp.dest('dist/image'));
 

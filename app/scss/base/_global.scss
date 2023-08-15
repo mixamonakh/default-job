@@ -1,11 +1,12 @@
 :root {
-    --transition-def: .4s all;
+    --anim: .4s all;
 
 
     // ! для тега body
     --body-font-size: 14px;
     --body-line-height: 18px;
     --body-color-text: var(--white);
+    --body-color-background: #fff;
 
     // ! основной шрифт *
     --default-font-family: 'AtypDisplay', sans-serif;
@@ -19,11 +20,53 @@
     --button-width: 20px;
     --button-height: 20px;
 
-    // ! font-size HTML для отступов
-    --html-font-size: 20px;
-
     // ! отступ между секциями
     --section-margin-bot: 30px;
+
+    // ! Стилизация заголовков h1-h4
+    --h1-font-size: 30px;
+    --h1-font-weight: 600;
+    --h1-line-height: 100%;
+
+    --h2-font-size: 30px;
+    --h2-font-weight: 600;
+    --h2-line-height: 100%;
+
+    --h3-font-size: 20px;
+    --h3-font-weight: 600;
+    --h3-line-height: 100%;
+
+    --h4-font-size: 20px;
+    --h4-font-weight: 600;
+    --h4-line-height: 100%;
+
+    // ! стилизация формы
+
+    // --form-input-border-width: 11px;
+    // --form-input-border-color: #000;
+    // --form-input-border-radius: 10px;
+    // --form-input-background: #fff;
+    // --form-input-color: #000;
+    // --form-input-color-placeholder: grey;
+    // --form-input-padding: 10px;
+    // --form-input-font-size: 16px;
+    // --form-input-line-height: 110%;
+
+    // ! стилизация акордиона
+
+    // --accordion-item-header-background: #fff;
+    // --accordion-item-content-background: #fff;
+    // --accordion-item-color-title-active: #fff;
+    // --accordion-item-margin-bottom: 20px;
+    // --accordion-item-title-font-size: 24px;
+    // --accordion-item-title-font-weight: 600;
+    // --accordion-item-content-font-size: 16px;
+}
+
+// !цвета
+:root {
+    --white: #fff;
+    --black: #000;
 }
 
 
@@ -33,9 +76,6 @@
         --body-font-size: 14px;
         --body-line-height: 18px;
     
-        // ! font-size HTML для отступов
-        --html-font-size: 20px;
-    
         // ! отступ между секциями
         --section-margin-bot: 30px;
     }
@@ -44,45 +84,29 @@
 * {
     font-family: var(--default-font-family);
 }
-html {
-    border: none !important;
-}
 body {
     font-family: '';
     font-size: var(--body-font-size);
     font-weight: 400;
+    background: var(--body-color-background);
     line-height: var(--body-line-height);
     color: var(--body-color-text);
 }
 main {
     overflow: hidden;
 }
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
-.ul-unset {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 .sectiion-mb {
     margin-bottom: var(--section-margin-bot);
 }
-// !! запретить перенос
-.white-space {
-    white-space: nowrap;
+.section-title {
+    margin-bottom: 30px;
+    color: #fff;
 }
-.italic {
-    font-style: italic;
+// ! ссылочки
+a {
+    text-decoration: none;
 }
-// ! назначить количество колонок ul
-.list-2 {
-    columns: 2;
-}
-.list-3 {
-    columns: 3;
-}
+
 
 // !xxl
 @media (max-width: 1399px) {

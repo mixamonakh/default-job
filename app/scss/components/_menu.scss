@@ -1,7 +1,3 @@
-:root {
-    --hamburger-btn: var(--white);
-}
-
 // ! компонент - меню
 .menu {
     ul {
@@ -40,7 +36,7 @@
     cursor: pointer;
     // ! черточки для крестика
     span {
-        background-color: var(--hamburger-btn);
+        background-color: #000;
         height: 4px;
         display: block;
         border-radius: 2.5px;
@@ -75,11 +71,11 @@
     } 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .menu-btn {
         display: flex;
     }
-    // ! меню уходит за vieport
+    // ! меню уходит за viewport
     .menu {
         position: absolute;
         right: -1000px;
